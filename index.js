@@ -32,7 +32,7 @@ function sendMessageToWhatsapp(client, message, response) {
     client
       .sendText(message.from, response.text.text[0])
       .then((result) => {
-        console.log("Result: ", result); //return object success
+        console.log("Result: ", result); 
         resolve(result);
       })
       .catch((erro) => {
